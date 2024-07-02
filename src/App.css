@@ -217,18 +217,17 @@
 }
 .challenge h2 {
   font-family: "Trap";
-  font-size: 36px;
+  font-size: 56px;
   font-weight: 700;
-  line-height: 44px;
+  line-height: 70px;
   letter-spacing: -0.02em;
   color: #324438;
 }
 .challenge p {
   font-family: "Inter";
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 24px;
-  text-align: left;
 }
 .challenge__box {
   background-image: url("../public/assets/challenge-bg.svg");
@@ -239,11 +238,12 @@
 }
 .challenge__box p {
   font-family: "Inter";
-  font-size: 20px;
+  font-size: 28px;
   font-style: italic;
   font-weight: 300;
-  line-height: 28px;
+  line-height: 36px;
   color: #ffffff;
+  
 }
 .challenge__box__p {
   padding-top: 5%;
@@ -309,6 +309,10 @@
   border: 1px solid #ff4b92;
   text-align: center;
 }
+.challenge__button_box__small{
+  width: 80%;
+  
+}
 
 /* talkToUs */
 .talkToUS {
@@ -343,6 +347,9 @@
   position: absolute;
   right: 5%;
   top: 25%;
+}
+.talkToBor{
+  border: 2px solid rgba(50, 68, 56, 1);
 }
 .talkToUs__but {
   background-color: #ffffff;
@@ -447,7 +454,7 @@
     line-height: 27.77px;
   }
   .challenge__ul li {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 28px;
   }
   .challenge__button_box h5 {
@@ -488,7 +495,7 @@
     line-height: 40px;
   }
   .challenge p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 26px;
   }
   .challenge__box p {
@@ -501,7 +508,7 @@
     padding-left: 10px;
   }
   .challenge__ul li {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 28px;
   }
   .challenge__button_box h5 {

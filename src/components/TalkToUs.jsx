@@ -3,7 +3,8 @@ import React from "react";
 const TalkToUs = () => {
   return (
     <>
-      <div className="container-xxl container-xl mt-4 mb-4">
+      <div className="talkToBor"></div>
+      <div className="container-xxl container-xl mt-5 mb-4">
         <div className="talkToUS">
           <div className="talkToUS__left">
             <div className="">
@@ -103,7 +104,7 @@ const TalkToUs = () => {
 </svg>
 
             </div>
-            <div className="w-75">
+            <div className="w-75 mt-3">
               <h3>Powering 4500+ post-purchase success stories worldwide</h3>
               <p>Discover how LateShipment.com can help your business</p>
             </div>

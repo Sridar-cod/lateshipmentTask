@@ -45,6 +45,9 @@ const Challenge2 = () => {
               compared to the manual process.
             </p>
             <ul className="challenge__ul">
+              <li>Automated Return Workflows: Automated Multiple label generation, return approvals, label expiration notifications
+     and auto-canceling expired labels saved significant time and resources compared to the manual process.
+</li>
               <li>
                 Customized Return Portal: Customers could easily initiate and
                 track returns through a branded portal with clear instructions,
@@ -70,8 +73,9 @@ const Challenge2 = () => {
             <p>
             Branch deployed LateShipment.com’s Returns Management platform to automate their returns and achieved the following
             </p>
-            <div className="challenge__button_box d-flex flex-column flex-md-row justify-content-around align-items-center p-4">
-              <div className="challenge__button_box__item">
+            <div className="d-flex justify-content-center">
+            <div className="challenge__button_box d-flex flex-column flex-md-row justify-content-around align-items-center p-4 challenge__button_box__small">
+              <div className="challenge__button_box__item ">
                 <h5>85%</h5>
                 <p> reduction in returns processing time</p>
               </div>
@@ -82,7 +86,8 @@ const Challenge2 = () => {
               <div className="">
                 <div className="challenge__button">Book a Demo</div>
               </div>
-            </div>
+              </div>
+              </div>
           </div>
         </div>
       </div>
