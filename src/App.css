@@ -1,38 +1,517 @@
-.App {
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@font-face {
+  font-family: "trap";
+  src: url("../public/assets/Trap_V1.1/Trap-Regular.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.b1 {
+  border: 2px solid red;
+}
+.b2 {
+  border: 2px solid yellow;
+}
+.mar-l{
+  margin-left: 5%;
+}
+
+/* navigation */
+
+.nav__icon {
+  font-family: "Roboto", sans-serif;
+  font-size: 13.27px;
+  font-weight: 400;
+  line-height: 15.55px;
+}
+.nav__span {
+  font-family: "Roboto";
+  font-size: 13.27px;
+  font-weight: 700;
+  line-height: 15.55px;
+}
+.nav__ul {
+  display: flex;
+  gap: 50px;
+}
+.nav__getStarted {
+  background: #ff4b92;
+  border-radius: 41.69px;
+  padding: 12px 24px 12px 24px;
+  font-family: "Inter";
+  font-size: 12px;
+  font-weight: 700;
+  box-shadow: 8px 8px 0px -4px;
+  border: 1px solid;
+}
+.nav__productTour {
+  border-radius: 41.69px;
+  padding: 12px 24px 12px 24px;
+  font-family: "Inter";
+  font-size: 12px;
+  font-weight: 700;
+  border: 1px solid;
+}
+/* landing_page */
+.landing {
+  min-height: 80vh;
+  max-width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 4px solid;
+  border-bottom: 3px solid #324438;
+}
+
+.landingLeft__top {
+  background-color: #324438;
+  color: white;
+  padding: 5%;
+  flex: 1;
+}
+
+.landingLeft__top h1 {
+  font-size: 3.5em;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  font-family: "trap";
+}
+
+.landingRight__botton {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.landingRight__botton p {
+  font-family: "Inter";
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: left;
+  color: #324438;
+}
+
+.landingRight__botton b {
+  font-family: "Trap";
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #324438;
+}
+
+.landingRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  background-image: url("../public/assets/landing-img.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* .landingRight img {
+  max-width: 100%;
+  height: 100%;
+
+} */
+
+.landingRight__botton__left,
+.landingRight__botton__right {
+  flex: 1;
+  padding: 2%;
+  box-sizing: border-box;
+}
+
+.landingRight__botton__right {
+  border-left: 3px solid #32443896;
+}
+
+/* about */
+.about {
+  padding: 3% 1%;
+}
+.about__border {
+  border-bottom: 2px solid #324438;
+}
+.about__left h2 {
+  font-family: "Trap";
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 72px;
+  letter-spacing: -0.02em;
+  color: #324438;
+}
+.about__left p {
+  font-family: "Inter";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.about__right__inner {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.about__right__box {
+  min-height: 160px;
+  min-width: 270px;
+
+  border-radius: 10px;
+  border: 2px solid #324438;
+}
+.about__right__box__p {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  color: white;
+  background-color: #324438;
+  text-align: center;
+  border: 2px solid #324438;
+}
+.about__p__b {
+  font-family: "Trap";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.54px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #324438;
+}
+.about__p__l {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.54px;
+  text-align: center;
+  color: #324438f0;
+}
+.about__right__box__span {
+  text-wrap: wrap;
+  width: 50%;
+  margin-left: 4%;
+  font-family: "Trap";
+  font-size: 15.29px;
+  font-weight: 700;
+  line-height: 17.74px;
+  letter-spacing: -0.02em;
+}
+.about__right {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: auto;
+}
+
+/* challenge */
+
+.challenge {
+  border: 2px solid #324438;
+  border-radius: 10px;
+}
+.challenge h2 {
+  font-family: "Trap";
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  color: #324438;
+}
+.challenge p {
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+.challenge__box {
+  background-image: url("../public/assets/challenge-bg.svg");
+  margin: 2px 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.challenge__box p {
+  font-family: "Inter";
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 28px;
+  color: #ffffff;
+}
+.challenge__box__p {
+  padding-top: 5%;
+  padding-left: 5%;
+}
+.challenge__name {
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  color: white;
+}
+.challenge__ul {
+  margin-top: 2%;
+}
+.challenge__ul li {
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.challenge__button_box {
+  background-color: #324438;
+  border-radius: 20px;
+  border: 2px solid;
+  color: #ffffff;
+}
+.challenge__button_box h5 {
+  font-family: "Trap";
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  text-shadow: 8px 2px 0px rgba(0, 0, 0, 1);
+}
+.challenge__button_box p {
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  text-align: center;
+  width: 70%;
+}
+.challenge__button_box__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.challenge__button {
+  background-color: #ffffff;
+  color: #ff4b92;
+  border-radius: 41.69px;
+  padding: 12px 24px;
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 700;
+  box-shadow: 8px 8px 0px -4px #ff4b92;
+  border: 1px solid #ff4b92;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* talkToUs */
+.talkToUS {
+  border-radius: 15px;
+  border: 3px solid;
+  display: flex;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.talkToUS__left {
+  background-color: black;
+  padding: 10px 20px;
   display: flex;
   flex-direction: column;
+  gap: 15%;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.talkToUS__right {
+  background-image: url("../public/assets/graph.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  /* min-height: 300px ; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5%;
+  position: relative;
+}
+.talkToUs_icon {
+  position: absolute;
+  right: 5%;
+  top: 25%;
+}
+.talkToUs__but {
+  background-color: #ffffff;
+  color: #ff4b92;
+  border-radius: 41.69px;
+  padding: 12px 24px 12px 24px;
+  font-family: "Inter";
+  font-size: 12px;
+  font-weight: 700;
+  box-shadow: 8px 8px 0px -4px #ff4b92;
+  border: 1px solid #ff4b92;
+}
+.talkToUS__right h3 {
+  font-family: "Trap";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40.5px;
+  letter-spacing: -0.04em;
+}
+.talkToUS__right p {
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 40.5px;
+  letter-spacing: -0.04em;
 }
 
-.App-link {
-  color: #61dafb;
+@media screen and (max-width: 1400px) {
+  .nav__ul {
+    display: flex;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .nav__ul {
+    display: flex;
+    gap: 5px;
+  }
+  .mar-l{
+    margin-left: 1%;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+@media (max-width: 992px) {
+  .landing {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  .landingLeft__top {
+    padding: 10%;
+  }
+
+  .landingRight__botton__left,
+  .landingRight__botton__right {
+    padding: 5%;
+  }
+
+  .landingRight__botton__right {
+    border-left: none;
+    /* border-top: 3px solid #32443896; */
   }
 }
+
+
+@media screen and (max-width: 768px) {
+  .talkToUS__right {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+  }
+  .talkToUs_icon {
+    position: absolute;
+    right: 20%;
+    top: 75%;
+  }
+  .talkToUS__right h3 {
+    font-size: 28px;
+    line-height: 30.5px;
+    letter-spacing: -0.02em;
+  }
+  .talkToUS__right p {
+    font-size: 18px;
+    line-height: 30.5px;
+    letter-spacing: -0.02em;
+  }
+
+  .challenge h2 {
+    font-size: 56px;
+    line-height: 70px;
+  }
+  .challenge p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .challenge__box p {
+    font-size: 28px;
+    line-height: 36.4px;
+  }
+  .challenge__name {
+    font-size: 20px;
+    line-height: 27.77px;
+  }
+  .challenge__ul li {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .challenge__button_box h5 {
+    font-size: 48px;
+    line-height: 64.72px;
+  }
+  .challenge__button_box p {
+    font-size: 20px;
+    line-height: 27.74px;
+  }
+  .challenge__img{
+    justify-content: end;
+  }
+}
+@media screen and (max-width: 576px) {
+  .talkToUS {
+    display: flex;
+    flex-direction: column;
+  }
+  .talkToUS__left {
+    gap: 15px;
+  }
+  
+  .landingLeft__top h1 {
+    font-size: 2em;
+  }
+
+  .landingRight__botton p {
+    font-size: 1.2rem;
+  }
+
+  .landingRight__botton b {
+    font-size: 2rem;
+  }
+  
+  .challenge h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .challenge p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .challenge__box p {
+    font-size: 22px;
+    line-height: 36.4px;
+  }
+  .challenge__name {
+    font-size: 20px;
+    line-height: 27.77px;
+    padding-left: 10px;
+  }
+  .challenge__ul li {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .challenge__button_box h5 {
+    font-size: 48px;
+    line-height: 64.72px;
+  }
+  .challenge__button_box p {
+    font-size: 20px;
+    line-height: 27.74px;
+  }
+}
+  
+
